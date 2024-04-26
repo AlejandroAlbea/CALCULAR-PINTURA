@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leroy Merlin | Calculadora </title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="imagenes/icono.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <div class="anuncio">
+        <h1>¡Descárgate la nueva App! Compra online desde tu móvil o en el 910 49 99 99.</h1>
+    </div>
+    
+    <nav>
+        <div class="logo">
+            <img src="imagenes/leroy_merlin.png" alt="Logo de la empresa">
+        </div>
+        <div class="nav-links">
+            <form action="/buscar" method="get" class="buscar">
+                <input type="search" name="q" placeholder="Buscar...">
+            </form>
+            <a href="https://www.leroymerlin.es/">Inicio</a>
+            <a href="https://www.leroymerlin.es/checkout/cart">Cesta</a>
+            <a href="https://www.leroymerlin.es/preguntas-frecuentes/">Ayuda</a>
+        </div>
+    </nav>
+ 
+    <div class="titulo">
+        <h1>¡CALCULA CUANTA PINTURA NECESITAS!</h1>
+        <h3 class="subtitulo">Elige un bote de pinturo e indica los metros cuadrados que quieres pintar.</h3>
+    </div>
+
+    <div class="contenedor">
+        <label for="metrosCuadrados">Metros cuadrados a pintar:</label>
+        <input type="number" id="metrosCuadrados" min="1" required>
+
+        <select id="colorYTamano" required>
+            <option value="">Elige un color</option>
+        </select>
+        
+
+        <button class="aceptar" onclick="calcularBotes()">Calcular</button>
+
+        <div id="resultado"></div>
+    </div>
+    
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10340.63200611467!2d2.6496820573871274!3d39.59818780962929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129792e5e6652a8d%3A0x7cdde77211cb5fd3!2sLeroy%20Merlin%20Palma%20Ciudad!5e0!3m2!1ses!2ses!4v1713772717428!5m2!1ses!2ses" width="2000" height="2000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    <script src="/assets/js/app.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
